@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', 'asyc', '-S' ]
+2 info using npm@3.10.10
+3 info using node@v6.14.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData asyc
+8 silly fetchNamedPackageData asyc
+9 silly mapToRegistry name asyc
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'asyc',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'asyc',
+12 silly mapToRegistry   name: 'asyc',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/asyc
+14 verbose request uri https://registry.npmjs.org/asyc
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 6:23:30 PM
+17 verbose request using bearer token for auth
+18 verbose request id 4d2c7fbd6ea0c056
+19 http request GET https://registry.npmjs.org/asyc
+20 http 200 https://registry.npmjs.org/asyc
+21 verbose headers { date: 'Tue, 27 Nov 2018 16:23:31 GMT',
+21 verbose headers   'content-type': 'application/json; charset=UTF-8',
+21 verbose headers   'transfer-encoding': 'chunked',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'set-cookie': [ '__cfduid=d4f809f45a25e706ff704e2b6ee3f46251543335810; expires=Wed, 27-Nov-19 16:23:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+21 verbose headers   'cf-cache-status': 'MISS',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'cf-ray': '4805f08fae894173-CAI',
+21 verbose headers   etag: 'W/"46db04b4353b4138497468f6f4418dd4"',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'last-modified': 'Sat, 26 May 2018 17:30:05 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   server: 'cloudflare',
+21 verbose headers   'content-encoding': 'gzip' }
+22 silly get cb [ 200,
+22 silly get   { date: 'Tue, 27 Nov 2018 16:23:31 GMT',
+22 silly get     'content-type': 'application/json; charset=UTF-8',
+22 silly get     'transfer-encoding': 'chunked',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie': [ '__cfduid=d4f809f45a25e706ff704e2b6ee3f46251543335810; expires=Wed, 27-Nov-19 16:23:30 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 silly get     'cf-cache-status': 'MISS',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'cf-ray': '4805f08fae894173-CAI',
+22 silly get     etag: 'W/"46db04b4353b4138497468f6f4418dd4"',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'last-modified': 'Sat, 26 May 2018 17:30:05 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     server: 'cloudflare',
+22 silly get     'content-encoding': 'gzip' } ]
+23 verbose get saving asyc to /home/oracle/.npm/registry.npmjs.org/asyc/.cache.json
+24 verbose correctMkdir /home/oracle/.npm correctMkdir not in flight; initializing
+25 verbose stack TypeError: Cannot convert undefined or null to object
+25 verbose stack     at pickVersionFromRegistryDocument (/usr/lib/node_modules/npm/lib/fetch-package-metadata.js:125:29)
+25 verbose stack     at /usr/lib/node_modules/npm/node_modules.bundled/iferr/index.js:13:50
+25 verbose stack     at /usr/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+25 verbose stack     at saved (/usr/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+25 verbose stack     at /usr/lib/node_modules/npm/node_modules.bundled/graceful-fs/polyfills.js:241:18
+25 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+26 verbose cwd /home/oracle/Desktop/NodeJs/Node.js with Express Project/library
+27 error Linux 3.10.0-862.14.4.el7.x86_64
+28 error argv "/usr/bin/node" "/usr/bin/npm" "i" "asyc" "-S"
+29 error node v6.14.3
+30 error npm  v3.10.10
+31 error Cannot convert undefined or null to object
+32 error If you need help, you may report this error at:
+32 error     <https://github.com/npm/npm/issues>
+33 verbose exit [ 1, true ]
